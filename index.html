@@ -6,7 +6,7 @@
     <title>Emergency Service Directory</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-50 font-sans max-h-[1613px] overflow-hidden">
+  <body class="bg-gray-50 font-sans max-h-[1613px] mb-2">
     <!-- Navbar -->
     <nav class="flex items-center justify-between px-6 py-2 bg-white shadow">
       <div class="flex items-center space-x-2">
@@ -14,12 +14,12 @@
         <h1 class="text-xl font-bold text-[#006747]">Emergency Service</h1>
       </div>
 
-      <div class="flex items-center space-x-4" id="heart">
+      <div class="flex items-center space-x-4">
         <div
-          class="flex items-center justify-center space-x-1 bg-[rgba(65,255,107,0.1)] px-3 py-1 w-[123px] rounded-2xl"
+          class="flex items-center justify-center space-x-1 bg-[rgba(65,255,107,0.1)] px-3 py-1 w-[123px] rounded-2xl" 
         >
           <img src="assets/heart.png" class="w-[30px] h-[30px]" alt="heart" />
-          <span class="font-bold">0</span>
+          <span class="font-bold" id="heart">0</span>
         </div>
         <div
           class="flex items-center justify-center space-x-1 bg-[rgba(65,255,107,0.1)] py-1 w-[120px] rounded-2xl"
@@ -32,8 +32,7 @@
           class="flex items-center space-x-1 bg-[#00A63E] text-white px-3 py-1 rounded-2xl"
           id="copy"
         >
-          <span>📋</span>
-          <span>0 Copy</span>
+          📋 0 Copy
         </div>
       </div>
     </nav>
@@ -62,12 +61,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-blue-100 p-2 rounded-lg">
-              <span class="text-2xl">🚓</span>
-            </div>
+            <div class="bg-blue-100 p-2 rounded-lg">🚓</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite"
             >
               ❤️
             </button>
@@ -82,14 +78,16 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1 btn"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1 btn"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -99,12 +97,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-red-100 p-2 rounded-lg">
-              <span class="text-2xl">🚒</span>
-            </div>
+            <div class="bg-red-100 p-2 rounded-lg">🚒</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite"
             >
               ❤️
             </button>
@@ -117,14 +112,16 @@
           <span class="text-xs bg-red-100 px-2 py-1 rounded-full">Fire</span>
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -134,12 +131,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-green-100 p-2 rounded-lg">
-              <span class="text-2xl">🚑</span>
-            </div>
+            <div class="bg-green-100 p-2 rounded-lg">🚑</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite "
             >
               ❤️
             </button>
@@ -154,14 +148,16 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -171,12 +167,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-blue-100 p-2 rounded-lg">
-              <span class="text-2xl">🚆</span>
-            </div>
+            <div class="bg-blue-100 p-2 rounded-lg">🚆</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite "
             >
               ❤️
             </button>
@@ -191,14 +184,16 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -208,12 +203,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-purple-100 p-2 rounded-lg">
-              <span class="text-2xl">🏛️</span>
-            </div>
+            <div class="bg-purple-100 p-2 rounded-lg">🏛️</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite "
             >
               ❤️
             </button>
@@ -226,29 +218,28 @@
           <span class="text-xs bg-purple-100 px-2 py-1 rounded-full">Gov</span>
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
 
         <!-- Card 6 -->
         <div
-          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2 heart"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-yellow-100 p-2 rounded-lg">
-              <span class="text-2xl">🌪️</span>
-            </div>
+            <div class="bg-yellow-100 p-2 rounded-lg">🌪️</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite"
             >
               ❤️
             </button>
@@ -263,14 +254,16 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -280,12 +273,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-blue-100 p-2 rounded-lg">
-              <span class="text-2xl">🛣️</span>
-            </div>
+            <div class="bg-blue-100 p-2 rounded-lg">🛣️</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite"
             >
               ❤️
             </button>
@@ -300,14 +290,16 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -317,12 +309,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-pink-100 p-2 rounded-lg">
-              <span class="text-2xl">👮‍♀️</span>
-            </div>
+            <div class="bg-pink-100 p-2 rounded-lg">👮‍♀️</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite "
             >
               ❤️
             </button>
@@ -335,14 +324,16 @@
           <span class="text-xs bg-pink-100 px-2 py-1 rounded-full">Police</span>
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
@@ -352,12 +343,9 @@
           class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
         >
           <div class="flex justify-between items-start">
-            <div class="bg-green-100 p-2 rounded-lg">
-              <span class="text-2xl">👶</span>
-            </div>
+            <div class="bg-green-100 p-2 rounded-lg">👶</div>
             <button
-              class="text-gray-400 hover:text-red-500 cursor-pointer"
-              id="favourite"
+              class="text-gray-400 hover:text-red-500 cursor-pointer favourite "
             >
               ❤️
             </button>
@@ -372,23 +360,43 @@
           >
           <div class="flex space-x-2 mt-2">
             <button
-              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm btn"
+              value="copy"
             >
-              <span>📋</span><span>Copy</span>
+              📋 Copy
             </button>
             <button
-              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm btn"
+              value="call"
             >
-              <span>📞</span><span>Call</span>
+              📞 Call
             </button>
           </div>
         </div>
       </div>
 
-      <div
-        id="historyContainer"
-        class="w-[430px] bg-yellow-200 p-4 rounded-xl shadow"
-      ></div>
+<div
+  id="historyContainer"
+  class="w-[430px] bg-yellow-200 p-4 rounded-xl shadow"
+>
+  <!-- Heading -->
+  <div class="heading w-full h-[60px] bg-red-100 flex items-center justify-between px-4">
+    <p class="font-bold text-xl h-4">Call History</p>
+    <div
+      class="flex items-center space-x-1 bg-[#00A63E] text-white px-3 py-1 rounded-2xl cursor-pointer"
+      id="clear"
+    >
+      Clear
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
