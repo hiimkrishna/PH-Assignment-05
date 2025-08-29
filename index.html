@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans max-h-[1613px] overflow-hidden">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-2 bg-white shadow">
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" class="w-8 h-8" alt="logo" />
+        <h1 class="text-xl font-bold text-[#006747]">Emergency Service</h1>
+      </div>
+
+      <div class="flex items-center space-x-4" id="heart">
+        <div
+          class="flex items-center justify-center space-x-1 bg-[rgba(65,255,107,0.1)] px-3 py-1 w-[123px] rounded-2xl"
+        >
+          <img src="assets/heart.png" class="w-[30px] h-[30px]" alt="heart" />
+          <span class="font-bold">0</span>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-1 bg-[rgba(65,255,107,0.1)] py-1 w-[120px] rounded-2xl"
+          id="coin"
+        >
+          <img src="assets/coin.png" class="w-[30px] h-[30px]" alt="coin" />
+          <span class="font-bold">100</span>
+        </div>
+        <div
+          class="flex items-center space-x-1 bg-[#00A63E] text-white px-3 py-1 rounded-2xl"
+          id="copy"
+        >
+          <span>📋</span>
+          <span>0 Copy</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] text-center text-white py-10"
+    >
+      <img
+        src="assets/logo-dark.png"
+        alt="Bangladesh Logo"
+        class="mx-auto w-20 h-20 mb-2"
+      />
+      <h2 class="text-3xl font-bold mb-1">Emergency Service Directory</h2>
+      <p class="text-sm">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People's Republic of Bangladesh
+      </p>
+    </section>
+
+    <!-- Main Section -->
+    <main class="flex w-full max-w-[1920px] mx-auto gap-4 p-4">
+      <div id="cardContainer" class="grid grid-cols-3 gap-4 flex-1">
+        <!-- Card 1 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-blue-100 p-2 rounded-lg">
+              <span class="text-2xl">🚓</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">National Emergency Number</h3>
+            <p class="text-gray-500 text-sm">National Emergency Number</p>
+          </div>
+          <p class="font-bold text-xl">999</p>
+          <span class="text-xs bg-blue-100 px-2 py-1 w-[30px] rounded-full"
+            >All</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1 btn"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1 btn"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-red-100 p-2 rounded-lg">
+              <span class="text-2xl">🚒</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Fire Service Number</h3>
+            <p class="text-gray-500 text-sm">Fire Service</p>
+          </div>
+          <p class="font-bold text-xl">101</p>
+          <span class="text-xs bg-red-100 px-2 py-1 rounded-full">Fire</span>
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-green-100 p-2 rounded-lg">
+              <span class="text-2xl">🚑</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Ambulance Number</h3>
+            <p class="text-gray-500 text-sm">Health</p>
+          </div>
+          <p class="font-bold text-xl">102</p>
+          <span class="text-xs bg-green-100 px-2 py-1 rounded-full"
+            >Health</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-blue-100 p-2 rounded-lg">
+              <span class="text-2xl">🚆</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Railway Helpline</h3>
+            <p class="text-gray-500 text-sm">Railway</p>
+          </div>
+          <p class="font-bold text-xl">117</p>
+          <span class="text-xs bg-blue-100 px-2 py-1 rounded-full"
+            >Railway</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-purple-100 p-2 rounded-lg">
+              <span class="text-2xl">🏛️</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Anti-Corruption</h3>
+            <p class="text-gray-500 text-sm">Government</p>
+          </div>
+          <p class="font-bold text-xl">105</p>
+          <span class="text-xs bg-purple-100 px-2 py-1 rounded-full">Gov</span>
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-yellow-100 p-2 rounded-lg">
+              <span class="text-2xl">🌪️</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Disaster Management</h3>
+            <p class="text-gray-500 text-sm">Disaster</p>
+          </div>
+          <p class="font-bold text-xl">109</p>
+          <span class="text-xs bg-yellow-100 px-2 py-1 rounded-full"
+            >Disaster</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-blue-100 p-2 rounded-lg">
+              <span class="text-2xl">🛣️</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Highway Helpline</h3>
+            <p class="text-gray-500 text-sm">Transport</p>
+          </div>
+          <p class="font-bold text-xl">103</p>
+          <span class="text-xs bg-blue-100 px-2 py-1 rounded-full"
+            >Transport</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-pink-100 p-2 rounded-lg">
+              <span class="text-2xl">👮‍♀️</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Women Safety</h3>
+            <p class="text-gray-500 text-sm">Police</p>
+          </div>
+          <p class="font-bold text-xl">1091</p>
+          <span class="text-xs bg-pink-100 px-2 py-1 rounded-full">Police</span>
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div
+          class="emergency-card bg-white rounded-xl shadow p-3 flex flex-col space-y-2"
+        >
+          <div class="flex justify-between items-start">
+            <div class="bg-green-100 p-2 rounded-lg">
+              <span class="text-2xl">👶</span>
+            </div>
+            <button
+              class="text-gray-400 hover:text-red-500 cursor-pointer"
+              id="favourite"
+            >
+              ❤️
+            </button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Child Helpline</h3>
+            <p class="text-gray-500 text-sm">Support</p>
+          </div>
+          <p class="font-bold text-xl">1098</p>
+          <span class="text-xs bg-green-100 px-2 py-1 rounded-full"
+            >Support</span
+          >
+          <div class="flex space-x-2 mt-2">
+            <button
+              class="flex-1 border border-gray-300 rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📋</span><span>Copy</span>
+            </button>
+            <button
+              class="flex-1 bg-green-600 text-white rounded-lg py-1 text-sm flex justify-center items-center space-x-1"
+            >
+              <span>📞</span><span>Call</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="historyContainer"
+        class="w-[430px] bg-yellow-200 p-4 rounded-xl shadow"
+      ></div>
+    </main>
+  </body>
+</html>
