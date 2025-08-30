@@ -46,7 +46,13 @@ btn.forEach(b => {
     } else {
               const card = b.closest('.emergency-card');
               const number = card.querySelector('p.font-bold.text-xl').textContent;
-            navigator.clipboard.writeText(number)
+            navigator.clipboard.writeText(number);
+            alert(`Number copied: ${number}`)
+            let copyCounter = Number(document.querySelector('#copyCounter').textContent);
+            
+            copyCounter++;
+            document.querySelector('#copyCounter').innerText = copyCounter;
+
     }
   });
 });
