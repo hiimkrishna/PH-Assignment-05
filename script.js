@@ -29,7 +29,7 @@ btn.forEach(b => {
       const entry = document.createElement('div');
       entry.className = 'flex justify-between bg-white rounded-lg px-3 py-2 shadow m-1 entry';
       entry.innerHTML = `
-      <div class="info flex flex-col h-[50px]">
+      <div class="bg-[rgba(49, 48, 48, 1)]info flex flex-col h-[50px]">
         <span class="call-number font-semibold">${title} </span>
         <span class="call-number font-semibold">${number} </span>
       </div>
